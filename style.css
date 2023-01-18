@@ -1,0 +1,13 @@
+/* ここからCSSを記述してください。 */
+.bg-img {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.vh-75 {
+    height: 75vh;
+}
+
+h3 {
+    padding: 6rem;
+}
