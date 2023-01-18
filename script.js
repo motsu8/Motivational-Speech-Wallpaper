@@ -34,27 +34,20 @@ class WallpaperObject {
     // テキストの垂直位置
     getVerticalPossion(){
         let prefix = "align-items-";
-        if (this.verticalPossion == "top"){
-            return prefix + "start";
-        } else if (this.verticalPossion == "center"){
-            return prefix + "center";
-        } else {
-            return prefix + "end";
-        }
+        if (this.verticalPossion == "top") return prefix + "start";
+        else if (this.verticalPossion == "center") return prefix + "center";
+        else return prefix + "end";
     }
     
     // テキストの水平位置
     getHorizontalPossion(){
         let prefix = "justify-content-";
-        if (this.horizontalPossion == "left"){
-            return prefix + "start";
-        } else if (this.horizontalPossion == "center"){
-            return prefix + "center";
-        } else {
-            return prefix + "end";
-        }
+        if (this.horizontalPossion == "left") return prefix + "start";
+        else if (this.horizontalPossion == "center") return prefix + "center";
+        else return prefix + "end";
     }
 }
+
 let domObj = document.getElementById("target");
 
 let wallpaper1 = new WallpaperObject("Perfection is achieved, not when there is nothing more to add, but when there is nothing left to take away. - Antoine de Saint", "1B4F72", "https://cdn.pixabay.com/photo/2020/06/12/03/06/magnifying-glass-5288877__340.jpg", "top", "right");
